@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showMessage() {
+            alert("Hello! This is your message.");
+        }
+
+        function changeBackground() {
+            const colors = ["#f1c40f", "#1abc9c", "#9b59b6", "#e67e22", "#e74c3c"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Page 1</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='page2.html'">Go to Page 2</button>
+        <button onclick="showMessage()">Show Message</button>
+        <button onclick="changeBackground()">Change Background</button>
+    </div>
+</body>
+</html>
